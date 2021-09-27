@@ -1,0 +1,243 @@
+:root{
+    --red: #dd1c1a;
+    --dark: #011627;
+    --yellow: #f0c808 ;
+    --light: #f6f6f6;
+    --lBlue: #bfcde0;
+    --yellowL: #e5bf07;
+    --redL: #c90f0d;
+    --blue: #6cabff;
+    --blueL: #3174d0;
+    --fFamily: 'Poppins', sans-serif;
+    --darkShadowSm: 4px 4px 15px rgba(211,211,211,0.158);
+    --darkShadowLg: 2px 2px 10px rgba(211,211,211,0.158);
+}
+
+/* Global CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: var(--fFamily);
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--light);
+    overflow-x: hidden;
+}
+
+body a{
+    color: var(--light);
+    text-decoration: none;
+}
+
+body ul{
+    list-style-type: none;
+}
+
+button{
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: var(--dark);
+    color: var(--blue);
+    box-shadow: none;
+}
+
+
+/* Announce section starts here   */
+.announce {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./pexels-negative-space-34577.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.announce .overlay{
+    background-color:rgba(0, 0, 0, 0.548);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.announce .heading{
+    margin-top: 50px;
+    font-size: 62px;
+    font-weight: 600;
+    color: var(--blue);
+    padding-left: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.announce .btn1{
+    margin-top: 50px;
+    font-size: 32px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color:var(--dark);
+    color: var(--yellow);
+    padding: 15px 20px;
+    border-radius: 8px;
+
+}
+
+.announce .btn1:hover{
+    transform: scale(1.1);
+    transition: all 200ms ease-in-out;
+}
+/* Navbar starts here */
+.navbar {
+    position: fixed;
+    top:0px;
+    width: 100%;
+    height: 16vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--darkShadowLg);
+    border-radius: 8px;
+    padding: 50px 120px;
+    background-color:var(--dark);
+}
+
+.navbar .navLinks ul{
+    width: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navbar .navLinks .navLink{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+.navbar .navLinks .navLink .navText{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navbar .navLinks .navLink:hover{
+    color: var(--yellow);
+    transform: scale(1.1);
+}
+.navbar .navTheme{
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.navbar .navTheme span:hover{
+    transform: scale(1.1);
+    color: var(--yellow);
+}
+
+/* Product section starts here */
+.Product{
+    padding: 50px 80px;
+    width: 100%;
+}
+.Product h1{
+    font-size: 68px;
+    text-align: center;
+    color: var(--yellow);
+    margin-bottom: 50px;
+}
+.Product .ProductRow1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.Product .ProductRow1 .product1{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  
+}
+.Product .ProductRow1 .product1 .productimg img{
+    border-radius: 4%;
+}
+
+.Product .ProductRow1 .product1 .productName{
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--yellow);
+    margin-top: 15px;
+    text-align: inherit;
+   
+}
+
+.Product .ProductRow1 .product1 .quantity{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+/* Footer starts here */
+.footer{
+    padding: 50px 130px;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    background-color: var(--dark);
+    color: var(--light);
+    box-shadow: var(--darkShadowLg);
+}
+.footer .title{
+    color: var(--blue);
+    font-size: 22px;
+    font-weight: 700;
+}
+.footer .link{
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.footer .quicklinks{
+    display: flex;
+    flex-direction: column;
+}   
+
+.footer .follow{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .documents{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .contact{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer .link:hover{
+    color: var(--yellow);
+    transition: all 200ms ease-in-out;
+}
